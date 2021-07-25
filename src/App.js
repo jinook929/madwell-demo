@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/main.css';
+import Content from './components/Content';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1 className="title">Title of Page</h1>
+        <Content />
+        <Gallery />
+        <footer>And finally, I am some text centered along the bottom of the page.</footer>
     </div>
   );
 }

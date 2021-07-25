@@ -1,4 +1,4 @@
-# Madwell Frontend Demo
+# Madwell Frontend Demo App
 
 # Getting Started with Create React App
 

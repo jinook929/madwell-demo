@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App .title {
+  color: blue;
+}
+
+.App footer {
+  color: green;
+}
+/*# sourceMappingURL=main.css.map */
