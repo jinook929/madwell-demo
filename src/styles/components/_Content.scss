@@ -1,0 +1,15 @@
+.Content {
+    display    : grid;
+    align-items: center;
+
+    p {
+        text-align: right;
+        font-size : 2.75rem;
+        padding: 2rem;
+
+        @include breakpoint(tablet) {
+            padding: 0 1.2rem;
+            margin: 1em 0;
+        }
+    }
+}

@@ -1,16 +1,114 @@
 body {
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #eaeaea;
+}
+
+header {
+  color: blue;
+}
+
+header h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    margin: 1.5rem;
+  }
+}
+
+footer {
+  color: green;
+}
+
+footer p {
+  font-size: 2.63rem;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .App {
   text-align: center;
 }
 
-.App .title {
-  color: blue;
+.Content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App footer {
-  color: green;
+.Content p {
+  text-align: right;
+  font-size: 2.75rem;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .Content p {
+    padding: 0 1.2rem;
+    margin: 1em 0;
+  }
+}
+
+.Gallery {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (150px)[3];
+      grid-template-columns: repeat(3, 150px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 1.2rem;
+  padding: 1.2rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Gallery {
+    padding: 1.2rem;
+    -ms-grid-columns: (150px)[2];
+        grid-template-columns: repeat(2, 150px);
+  }
+}
+
+.Card {
+  position: relative;
+}
+
+.Card .image {
+  display: block;
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Card .caption {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=main.css.map */

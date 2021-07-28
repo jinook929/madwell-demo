@@ -1,0 +1,12 @@
+header {
+    color: blue;
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: bold;
+
+        @include breakpoint(tablet) {
+            margin: 1.5rem;
+        }
+    }
+}

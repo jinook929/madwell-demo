@@ -1,0 +1,14 @@
+@mixin place-center {
+  position : absolute;
+  top      : 50%;
+  left     : 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin breakpoint($size) {
+  @if $size == tablet {
+    @media only screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}
